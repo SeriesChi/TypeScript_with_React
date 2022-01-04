@@ -25,6 +25,7 @@ import { Toast } from "./components/templateLiterals/Toast";
 import { CustomButton } from "./components/html/Button";
 import { CustomInput } from "./components/html/Input";
 import CustomComponent from "./components/html/CustomComponent";
+import { Text } from "./components/polymorphic/Text";
 
 function App() {
   const person = {
@@ -121,6 +122,17 @@ function App() {
 
       {/* Sixteen Task -> Extracting a Component Props Types */}
       {/* <CustomComponent name="Series" isLoggedIn /> */}
+
+      {/* Seventeen Task -> Polymorphic Component */}
+      <Text as="h1" size="lg">
+        Heading
+      </Text>
+      <Text as="p" size="md">
+        Paragraph
+      </Text>
+      <Text as="label" htmlFor="label" size="sm" color="primary">
+        label
+      </Text>
     </div>
   );
 }
